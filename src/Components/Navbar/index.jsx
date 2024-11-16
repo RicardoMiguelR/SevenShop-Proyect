@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { ShoppingEcommerceContext } from "../../Context";
 import { NavLink } from "react-router-dom";
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
-import showProduct from '../../Components/Card'
 import logo from "../../Assets/Images/logo.png";
 
 const Navbar = () => {
@@ -36,16 +35,16 @@ const Navbar = () => {
               onClick={() => context.setSearchByCategory('Mens Clothing')}
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              Men's Clothing
+              Mens Clothing
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/womens-clothing"
-              onClick={() => context.setSearchByCategory('Womes Clothing')}
+              onClick={() => context.setSearchByCategory('Womens Clothing')}
               className={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              Women's Clothing
+              Womens Clothing
             </NavLink>
           </li>
           <li>
@@ -66,18 +65,9 @@ const Navbar = () => {
               Electronics
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/others"
-              onClick={() => context.setSearchByCategory('Others')}
-              className={({ isActive }) => (isActive ? activeStyle : undefined)}
-            >
-              Others
-            </NavLink>
-          </li>
         </ul>
         <ul className="flex items-center gap-3">
-          <li className="text-white/85 font-serif">ricardomr.23@hotmail.com</li>
+          <li className="text-white/85 font-serif"><i>Ricardo Miguel Raya</i></li>
           <li>
             <NavLink
               to="/my-orders"

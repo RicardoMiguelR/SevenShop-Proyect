@@ -32,7 +32,7 @@ const CheckoutSideMenu = () => {
       context.setCartProducts([]);
       context.setCount(context.count - context.cartProducts.length);
       context.closeCheckoutSideMenu();
-      context.setSearchByTitle(null)
+      context.setSearchByTitle(null);
     }
   };
 
@@ -52,7 +52,7 @@ const CheckoutSideMenu = () => {
         </div>
       </div>
       <div className="px-5 overflow-y-scroll flex-1">
-        {context.cartProducts.map(product => (
+        {context.cartProducts.map((product) => (
           <OrderCard
             key={product.id}
             id={product.id}

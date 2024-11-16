@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nothing-products {
+  position: relative;
+  margin-left: 150%;
+  text-indent: initial;
+}
