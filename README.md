@@ -1,8 +1,13 @@
-# React + Vite
+# SevenShop Proyect
+### _Proyecto en desarrollo parcial, tienda virtual_
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Es un proyecto en desarrollo, realizado con react, por ahora solo la parte de frontend, pero incluira un servidor backend y su BD, utilizando una API publica, por el momento para pruebas FakeStore API, Uso de Context para el estado global.
 
-Currently, two official plugins are available:
+### Tecnologias:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Html
+- Css
+- Tailwind Css
+- Vite
+- React Js
+- API
