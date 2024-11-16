@@ -32,7 +32,7 @@ const CheckoutSideMenu = () => {
       context.setCartProducts([]);
       context.setCount(context.count - context.cartProducts.length);
       context.closeCheckoutSideMenu();
-      console.log(orderToAdd);
+      context.setSearchByTitle(null)
     }
   };
 

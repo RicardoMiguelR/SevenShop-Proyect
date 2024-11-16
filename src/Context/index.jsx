@@ -80,18 +80,14 @@ export const ShoppingEcommerceProvider = ({ children }) => {
     if (searchByTitle && searchByCategory)
       setFilteredItems(filterBy("BY_TITLE_AND CATEGORY", items, searchByTitle));
     if (searchByTitle && !searchByCategory)
-      setFilteredItems(
-        filterBy("BY_TITLE", items, searchByTitle, searchByCategory)
-      );
+      setFilteredItems(filterBy("BY_TITLE", items, searchByTitle, searchByCategory));
     if (!searchByTitle && searchByCategory)
-      setFilteredItems(
-        filterBy("BY_CATEGORY", items, searchByTitle, searchByCategory)
-      );
+      setFilteredItems(filterBy("BY_CATEGORY", items, searchByTitle, searchByCategory));
     if (!searchByTitle && !searchByCategory)
       setFilteredItems(filterBy(null, items, searchByTitle, searchByCategory));
   }, [items, searchByTitle, searchByCategory]);
 
-  console.log("filtered items: ", filteredItems);
+  console.log("searchByTitle", searchByTitle);
 
   return (
     <ShoppingEcommerceContext.Provider
